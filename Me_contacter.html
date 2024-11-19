@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Acceuil.css" />
+    <meta charset="UTF-8" />
+    <title>Maxance</title>
+</head>
+
+<div id="wrapper4">
+
+    <body class="page4">
+        <header>
+            <a href="https://iut-blois.univ-tours.fr/">
+                <img src="image/logo.png" alt="Logo" width="100px" class="logo" />
+            </a>
+        </header>
+
+        <div class="navbar">
+            <div class="table">
+                <a href="Accueil.html">Accueil</a>
+                <a href="Centres d'interés.html">Centres d'interés</a>
+                <a href="Projet_Professionnel.html">Projet Professionnel</a>
+                <a href="Me_contacter.html">Me contacter</a>
+            </div>
+        </div>
+
+
+        <form onsubmit="alert('Merci, ' +prenom.value);" action="Accueil.html">
+            <h1 class="PK">Pourquoi me contacter ?</h1>
+            <p> Dans quel cadre voulez-vous me contacter ?
+            </p>
+            <input class="AZE" type="radio" name="nom" value="1" /> Travail
+            <br>
+            <input type="radio" name="nom" value="2" /> Etudes
+            <br>
+            <input type="radio" name="nom" value="3" /> Autres
+            <br>
+            <br>
+            <p> Pourquoi me contacter ?</p>
+            <input type="radio" name="nom1" value="1" /> Question 
+            <br>
+            <input type="radio" name="nom1" value="2" /> Informations
+            <br>
+            <br>
+
+            <br>
+
+            Nom : <input type="text" name="nom" value="" placeholder="Dupont" required><br>
+            Prenom : <input type="text" name="prenom" value="" placeholder="Jean" required><br>
+            Date de naissance : <input type="date" name="date" value="" placeholder="jj/mm/aaaa" required>
+            <br>
+            <br>
+            <input type="submit" value="Envoyer" />
+        </form>
+
+        <div class="Réseaux">
+            <a href="https://www.instagram.com/maxance__gst/">
+                <img class="photo" src="image/Logo_insta.png" alt="Image CV"/>
+            </a>
+            <a href="https://www.stillincontact.com/membre.php?menu=consultermafiche&identifiant=673b79762533d">
+                <img class="photo" src="image/Logo_stillin.png" alt="Image CV"/>
+            </a>
+            <a href="https://www.linkedin.com/in/maxance-genestine-137409339/">
+                <img class="photo" src="image/LinkedIn_logo_initials.png" alt="Image CV"/>
+            </a>
+            <a href="Text/DM_2024.pdf" target="_blank">
+                <img class="photo" src="image/LaTeX_logo.png" alt="Image CV"/>
+            </a>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Maxance Genestine - Toute reproduction interdite</p>
+        </footer>
+    </body>
+</div>
+
+</html>

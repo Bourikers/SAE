@@ -1,0 +1,408 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.navbar {
+    background-color: #A594F9;
+    overflow: hidden;
+    grid-area: nav;
+    transition: transform 5ms ease;
+    /* Ajoute une transition pour un effet fluide */
+}
+
+.table {
+    grid-area: tab;
+    display: table;
+    margin: auto;
+}
+
+/* Style pour les liens */
+.navbar a {
+    justify-content: space-between;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Couleur au survol */
+.navbar a:hover {
+    text-decoration: underline;
+    background-color: #ddd;
+    color: black;
+    transform: translateY(-5px);
+    /* Déplace le lien de 5 pixels vers le haut au survol */
+}
+
+
+footer {
+    grid-area: foot;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5EFFF;
+    margin-top: 100px;
+}
+
+
+header {
+    grid-area: head;
+    background-color: #A594F9;
+    padding-top: 11px;
+    padding-left: 10px;
+}
+
+.logo {
+    box-shadow: 1px 4px 5px gray
+}
+
+h1{text-decoration: underline;
+    padding-left: 5px;}
+h3{
+    text-decoration: underline;
+    padding-left: 5px;
+}
+h2{
+    text-decoration: underline;
+}
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+    font-size: large;
+    line-height: 35px;
+}
+
+ul{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+    font-size: large;
+    line-height: 35px;
+}
+
+/*-------------------------1-----------------*/
+
+    #wrapper1 {
+        display: grid;
+        grid-template-columns: 1fr 100fr 100fr 1fr;
+        grid-auto-rows: minmax(0px, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas:
+            "head nav nav nav"
+            "sec sec sec sec"
+            ". lyc lyc ."
+            ". in in ."
+            "foot foot foot foot"
+    }
+
+
+@media screen and (max-width: 768px) {
+#wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr; /* Une colonne unique */
+    grid-row-gap: 10px; /* Espacement entre les lignes */
+    grid-template-areas:
+        "head"
+        "nav"
+        "sec"
+        
+        "lyc"
+        "in"
+        "foot";
+}
+}
+
+.page1{
+    background-image: url(image/fond84.jpg);
+    background-size:cover;
+}
+
+.moi img {
+    border-radius: 40px;
+}
+
+section {
+    grid-area: sec;
+    text-align: center;
+    padding: 20px;
+    border-bottom: solid 5px black;
+    border-top: solid 5px black;
+    font-family: Cambria;
+    background-image: url(image/ftuy4.png);
+    background-size: cover;
+    height: 250px;
+}
+
+
+.lycée {
+    grid-area: lyc;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    border: solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #CDC1FF;
+    display: block;
+}
+
+.Texte{
+    text-align: center;
+}
+
+.infos {
+    grid-area: in;
+    border: solid;
+    border-radius: 10px;
+    display: block;
+    width:50% ;
+    margin: auto;
+}
+
+
+
+
+/*Pour le titre de la partie*/
+.Etudes {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*Pour l'image*/
+.Vaucanson {
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.CV{
+    width: 100%;
+}
+
+/*-------------------------2-----------------*/
+
+    #wrapper2 {
+        display: grid;
+        grid-template-columns: 1fr 100fr 100fr 1fr;
+        grid-auto-rows: minmax(0px, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px;
+        grid-template-areas:
+            "head nav nav nav"
+            ". sp . ."
+            ". . vy ."
+            "foot foot foot foot"
+}
+
+
+    @media screen and (max-width: 768px) {
+        #wrapper2 {
+            display: grid;
+            grid-template-columns: 1fr; /* Une colonne unique */
+            grid-row-gap: 10px; /* Espacement entre les lignes */
+            grid-template-areas:
+            "head"
+            "nav"
+            "sp"
+            "vy"
+            "foot"
+    }
+}
+
+.page2{
+    background-image: url(image/Fond54.jpg);
+    background-size: cover;
+}
+
+.sport{
+    grid-area: sp;
+    text-align: center;
+    border:solid #CDC1FF 5px;
+    border-radius: 50px;
+    padding: 5px;
+    display: block;
+    background-color: #F5EFFF;
+}
+
+.Ballon{
+    width:25%;
+}
+
+.voyages{
+    grid-area: vy;
+    text-align: center;
+    border:solid #CDC1FF 5px;
+    border-radius: 50px;
+    display: block;
+    background-color: #F5EFFF;
+
+}
+
+.Dj{
+    width: 50%;
+}
+
+/*-------------------------3-----------------*/
+#wrapper3 {
+    display: grid;
+    grid-template-columns: 1fr 100fr 100fr 15fr;
+    grid-auto-rows: minmax(0px, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    grid-template-areas:
+            "head nav nav nav"
+            ". p p ."
+            ". T T ."
+            ". C C ."
+            "foot foot foot foot"
+    }
+
+
+@media screen and (max-width: 500px) {
+    #wrapper3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        grid-template-areas:
+            "head"
+            "nav"
+            "sec"
+            "lyc"
+            "in"
+            "foot"
+    }
+}
+
+.page3{
+    background-image: url(image/fond516.jpg);
+    background-size: cover;
+}
+
+.Studies{
+    grid-area: p;
+    text-align: center;
+    border: solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #CDC1FF;
+    color: rgb(0, 0, 0);
+}
+
+.Travail{
+    grid-area: T;
+    text-align: center;
+    border: solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #CDC1FF;
+    color: rgb(0, 0, 0);
+}
+
+.Conditions{
+    grid-area: C;
+    text-align: center;
+    border: solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #CDC1FF;
+    color: rgb(0, 0, 0);
+}
+
+/*-------------------------4-----------------*/
+@media screen and (min-width: 500px) {
+    #wrapper4 {
+        display: grid;
+        grid-template-columns: 1fr 100fr 100fr 1fr;
+        grid-auto-rows: minmax(0px, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px;
+        grid-template-areas:
+            "head nav nav ."
+            ". form form ."
+            ". RE RE ."
+            "foot foot foot foot"
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #wrapper4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        grid-template-areas:
+            "head"
+            "nav"
+            "form"
+            "foot"
+    }
+}
+
+.page4 {
+    background-image: url('image/Fond_4.png');
+    background-size: cover;
+}
+
+form {
+    display: block;
+    margin: auto;
+    grid-area: form;
+    padding: 50px;
+    padding-top: 0px;
+    border-radius: 10px;
+    background-color: #CDC1FF;
+    box-shadow: 0 5px 10px rgba(0, 0, 1, 1);
+}
+input {
+    border-radius: 10px;
+    color: black;
+}
+
+input[type="radio"] {
+            width: 20px; /* Taille du cercle */
+            height: 20px; /* Taille du cercle */
+            margin-right: 10px; /* Espacement avec le texte */
+            accent-color:#CDC1FF; /* Couleur de sélection (modern browsers) */
+            cursor: pointer; /* Curseur pointeur */
+        }
+
+        /* Style au survol */
+        input[type="radio"]:hover {
+            transform: scale(1.1); /* Légère mise en évidence */
+        }
+
+
+.Qcm {
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.Réseaux{
+    margin-top: 50px;
+    grid-area: RE;
+    text-align: center;
+}
+
+.photo{
+    width: 10%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+a .photo{
+    transition: transform 0.3s ease; /* Transition fluide */
+}
+
+a:hover .photo{
+    transform: translateY(-20px); /* Déplace l'image vers le haut */
+}
+
+.PK{
+    text-align: center;
+}
